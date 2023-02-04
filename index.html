@@ -31,13 +31,13 @@
             var swals = Swal
             async function mulai(){
                 var { value: nama } = await swals.fire({
-                    title: 'Nama kamu 2 depan?',
+                    title: 'Nama lengkap kamu?',
                     input: 'text',
                     confirmButtonText: 'Lanjut',
                     allowOutsideClick: false,
                     showCancelButton: false,
                 });                           
-                if(nama.toLowerCase() == "ardilla putri"){
+                if(nama.toLowerCase() == "ardila putri rahmadhani"){
                   play();
                 	window.nama = nama;
                     text2 = "Dari: " + author + ", Untukmu: " + window.nama + ".";
@@ -47,7 +47,7 @@
                     ketik();showDiv();showFt();
                     document.getElementById("namamu").innerHTML = "Hallo, " + nama + "!";                    
                 } else {
-                    await swals.fire('Isi namanya ayanggg 2 kata');
+                    await swals.fire('Isi namanya ayanggg 3 kata');
                     await swals.fire('Gak boleh kosong');
                     mulai();
                 }
